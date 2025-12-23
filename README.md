@@ -27,6 +27,10 @@ A responsive Netflix UI clone built using **HTML, CSS, and JavaScript**, inspire
 <img width="1648" alt="Netflix Clone Screenshot 2" src="https://github.com/user-attachments/assets/150fff36-c4fe-4e49-86f9-3118a147e0d6" />
 
 ---
+## 🌐 Live Demo
+https://saurabh54-e.github.io/netflix-ui-clone/
+
+---
 
 ## 🚀 How to Run
 1. Clone the repository
