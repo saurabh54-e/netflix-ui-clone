@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="main">
+        <nav>
+            <span class="logo">
+                <img src="Assets/svgs/logo.svg" alt="Netflix" />
+            </span>
+            <div>
+                <select class="one" name="LanguageSelect">
+                    <option value="en-IN">English</option>
+                    <option value="hi-IN">हिन्दी</option>
+                </select>
+                <button class="second">Sign in</button>
+            </div>
+        </nav>
+
+        <div class="box"></div>
+
+        <div class="hero">
+            <span class="hero1"><b>Unlimited movies,</b></span>
+            <span class="hero1"><b>TV shows and more</b></span>
+            <span class="hero2">Starts at ₹149. Cancel at any time.</span>
+            <span class="hero3">
+                Ready to watch? Enter your email to create or restart your membership.
+            </span>
+            <div class="hero5">
+                <input class="hero5_1" type="email" placeholder="Email address" />
+                <button class="hero5_2">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trending Section -->
+    <section class="trending-section">
+        <h2>Trending Now</h2>
+
+        <div class="scroll-wrapper">
+            <a class="arrow left-arrow" onclick="scrollLeft()">&#10094;</a>
+
+            <div class="trending-container" id="scroll-container">
+
+                <div class="card-wrapper">
+                    <span class="rank">1</span>
+                    <div class="card">
+                        <img src="Assets/Images/the royals.webp" alt="The Royals" />
+                    </div>
+                </div>
+
+                <div class="card-wrapper">
+                    <span class="rank">2</span>
+                    <div class="card">
+                        <img src="Assets/Images/chhava.webp" alt="Chhava" />
+                    </div>
+                </div>
+
+                <div class="card-wrapper">
+                    <span class="rank">3</span>
+                    <div class="card">
+                        <img src="Assets/Images/goodbad.webp" alt="Good Bad" />
+                    </div>
+                </div>
+
+                <div class="card-wrapper">
+                    <span class="rank">4</span>
+                    <div class="card">
+                        <img src="Assets/Images/diplomat.webp" alt="Diplomat" />
+                    </div>
+                </div>
+
+                <div class="card-wrapper">
+                    <span class="rank">5</span>
+                    <div class="card">
+                        <img src="Assets/Images/jewel.webp" alt="Jewel" />
+                    </div>
+                </div>
+
+                <div class="card-wrapper">
+                    <span class="rank">6</span>
+                    <div class="card">
+                        <img src="Assets/Images/pushpa.webp" alt="Pushpa" />
+                    </div>
+                </div>
+
+                <div class="card-wrapper">
+                    <span class="rank">7</span>
+                    <div class="card">
+                        <img src="Assets/Images/deva.webp" alt="Deva" />
+                    </div>
+                </div>
+
+                <div class="card-wrapper">
+                    <span class="rank">8</span>
+                    <div class="card">
+                        <img src="Assets/Images/dragon.webp" alt="Dragon" />
+                    </div>
+                </div>
+
+                <div class="card-wrapper">
+                    <span class="rank">9</span>
+                    <div class="card">
+                        <img src="Assets/Images/court.webp" alt="Court" />
+                    </div>
+                </div>
+
+                <div class="card-wrapper">
+                    <span class="rank">10</span>
+                    <div class="card">
+                        <img src="Assets/Images/tangerines.webp" alt="Tangerines" />
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="arrow right-arrow" onclick="scrollRight()">&#10095;</a>
+        </div>
+    </section>
+
+    <!-- Scroll Script -->
+    <script>
+        function scrollLeft() {
+            const container = document.getElementById("scroll-container");
+            container.scrollBy({ left: -container.offsetWidth, behavior: "smooth" });
+        }
+
+        function scrollRight() {
+            const container = document.getElementById("scroll-container");
+            container.scrollBy({ left: container.offsetWidth, behavior: "smooth" });
+        }
+    </script>
+
+    <!-- Reasons Section -->
+    <section class="intro">
+        <h2>More reasons to join</h2>
+        <div class="reasons">
+            <div class="reason1">
+                <h3><b>Enjoy on your TV</b></h3>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            </div>
+
+            <div class="reason1">
+                <h3><b>Download your shows to watch offline</b></h3>
+                <p>Save your favourites easily and always have something to watch.</p>
+            </div>
+
+            <div class="reason1">
+                <h3><b>Watch everywhere</b></h3>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+            </div>
+
+            <div class="reason1">
+                <h3><b>Create profiles for kids</b></h3>
+                <p>Send kids on adventures with their favourite characters in a space made just for them.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="FAQs">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="FAQs1">
+
+            <div class="faq-container">
+                <details>
+                    <summary>What is Netflix?</summary>
+                    <div class="faq-content">
+                        <p>
+                            Netflix is a streaming service offering movies, series, documentaries, and more on
+                            internet-connected devices.
+                        </p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="faq-container">
+                <details>
+                    <summary>How much does Netflix cost?</summary>
+                    <div class="faq-content">
+                        <p>Plans range from ₹149 to ₹649 a month.</p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="faq-container">
+                <details>
+                    <summary>How do I cancel?</summary>
+                    <div class="faq-content">
+                        <p>You can cancel anytime online with no cancellation fees.</p>
+                    </div>
+                </details>
+            </div>
+
+        </div>
+
+        <div class="rtw">
+            <span class="hero3">Ready to watch? Enter your email to create or restart your membership.</span>
+            <div class="hero5">
+                <input class="hero5_1" type="email" placeholder="Email address" />
+                <button class="hero5_2">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="end">
+        <span class="end1">Questions? Call <a href="#">000-800-919-1743</a></span>
+
+        <div class="grid-container">
+            <div class="grid-item">FAQ</div>
+            <div class="grid-item">Help Center</div>
+            <div class="grid-item">Account</div>
+            <div class="grid-item">Media Center</div>
+            <div class="grid-item">Investor Relations</div>
+            <div class="grid-item">Jobs</div>
+            <div class="grid-item">Ways to Watch</div>
+            <div class="grid-item">Privacy</div>
+            <div class="grid-item">Terms of Use</div>
+            <div class="grid-item">Corporate Information</div>
+            <div class="grid-item">Cookie Preferences</div>
+            <div class="grid-item">Speed Test</div>
+            <div class="grid-item">Contact Us</div>
+            <div class="grid-item">Only on Netflix</div>
+            <div class="grid-item">Legal Notices</div>
+        </div>
+
+        <div class="end2">
+            <select class="one">
+                <option>English</option>
+                <option>हिन्दी</option>
+            </select>
+        </div>
+
+        <p class="p1">Netflix India</p>
+    </footer>
+
+</body>
+</html>
